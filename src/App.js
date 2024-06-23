@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AddSubscriber from './components/AddSubscriber';
+import ViewSubscriber from './components/ViewSubscriber';
 
 function App() {
   return (
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<AddSubscriber/>}/>
+      <Route path="/view" element={<ViewSubscriber/>}/>
     </Routes>
     </BrowserRouter>
   );
